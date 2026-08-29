@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output (already tracked historically — keep ignoring for clean clones)
+# dist/
+
+# Environment / local secrets
+.env
+.env.local
+.env.*.local
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Wrangler / Cloudflare local state
+.wrangler/
+.dev.vars
+
+# Vite cache
+.vite/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Python (icon-generator script)
+__pycache__/
+*.pyc
+*.pyo

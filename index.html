@@ -1,32 +1,49 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script defer src="https://umami.aimei.eu.org/script.js" data-website-id="50105ef6-e63c-4734-aa97-1e3095b102c2"></script>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0f172a" />
-    <title>Kix Image Tools - Free Online Image Compression &amp; Format Converter | AVIF/WebP/JPEG/PNG</title>
-    <meta name="description" content="Kix Image Tools is a free online image compression and format conversion tool that runs 100% in your browser — no upload, fully private. Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG with adjustable quality and batch processing. Ideal for web image optimization, SEO, and faster websites." />
-    <meta name="keywords" content="image compression, online image compressor, image format converter, avif compressor, webp converter, jpeg compression, png optimizer, jpeg xl, jxl, batch image compression, free image compressor, browser-based image compression, no upload image compression, image optimization, reduce image size, web image optimization, seo image optimization, compress images online, image size reducer, image tools, kix image tools" />
-    <meta name="author" content="KixTools" />
+    <!-- foxai favicons (multi-size + svg for crisp HiDPI) -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/icon-128x128.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F97316" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>Kix Image Tools · foxai — Free Online Image Compression &amp; Format Converter | AVIF/WebP/JPEG/PNG</title>
+    <meta name="description" content="Kix Image Tools is a free online image compression and format conversion tool by foxai that runs 100% in your browser — no upload, fully private. Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG with adjustable quality and batch processing. Ideal for web image optimization, SEO, and faster websites." />
+    <meta name="keywords" content="image compression, online image compressor, image format converter, avif compressor, webp converter, jpeg compression, png optimizer, jpeg xl, jxl, batch image compression, free image compressor, browser-based image compression, no upload image compression, image optimization, reduce image size, web image optimization, seo image optimization, compress images online, image size reducer, image tools, kix image tools, foxai" />
+    <meta name="author" content="foxai · KixTools" />
+    <meta name="generator" content="foxai" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <link rel="canonical" href="https://image.kixtools.com/" />
     <link rel="alternate" hreflang="en" href="https://image.kixtools.com/" />
     <link rel="alternate" hreflang="zh-CN" href="https://image.kixtools.com/zh-CN/" />
     <link rel="alternate" hreflang="x-default" href="https://image.kixtools.com/" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Kix Image Tools" />
+    <meta property="og:site_name" content="foxai · Kix Image Tools" />
     <meta property="og:title" content="Kix Image Tools - Free Online Image Compression & Format Converter" />
     <meta property="og:description" content="Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG — 100% in your browser, private, no upload, with batch processing. Ideal for web image optimization and SEO." />
     <meta property="og:url" content="https://image.kixtools.com/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="zh_CN" />
     <meta property="og:image" content="https://image.kixtools.com/meta.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Kix Image Tools - Free Online Image Compression" />
     <meta name="twitter:description" content="Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG in your browser. Private, free, batch processing." />
     <meta name="twitter:image" content="https://image.kixtools.com/meta.jpg" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -38,6 +55,17 @@
         "operatingSystem": "Any (Web Browser)",
         "description": "Free online image compression and format conversion tool that runs 100% in your browser. Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG.",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "foxai",
+          "url": "https://foxai.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://image.kixtools.com/icon-512x512.png",
+            "width": 512,
+            "height": 512
+          }
+        },
         "featureList": [
           "AVIF compression",
           "WebP conversion",
@@ -49,13 +77,122 @@
           "Adjustable quality"
         ]
       }
-    </script>    
-    <script async="async" data-cfasync="false" src="https://pl31062414.profitableratecpmnetwork.com/e5f58a7cea1b0463c55e70988717b1aa/invoke.js"></script>
-<div id="container-e5f58a7cea1b0463c55e70988717b1aa"></div>
+    </script>
+
+    <style>
+      /* Critical inline CSS: prevents FOUC and shows branded splash before React hydrates */
+      :root { color-scheme: light; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+          "Microsoft YaHei", sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #foxai-boot {
+        position: fixed; inset: 0;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        background:
+          radial-gradient(1200px 600px at 10% -10%, rgba(249,115,22,0.18), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(59,130,246,0.18), transparent 55%),
+          linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+        z-index: 9999;
+        transition: opacity 0.35s ease;
+      }
+      #foxai-boot.hidden { opacity: 0; pointer-events: none; }
+      #foxai-boot .boot-mark { animation: foxaiPulse 1.6s ease-in-out infinite; }
+      #foxai-boot .boot-name {
+        margin-top: 18px;
+        font-size: 22px; font-weight: 800; letter-spacing: -0.02em;
+        color: #0f172a;
+      }
+      #foxai-boot .boot-name span { font-weight: 400; color: #f97316; }
+      #foxai-boot .boot-tag {
+        margin-top: 4px;
+        font-size: 10px; font-weight: 600; letter-spacing: 0.18em;
+        color: #64748b; text-transform: uppercase;
+      }
+      #foxai-boot .boot-bar {
+        margin-top: 28px; width: 180px; height: 3px;
+        background: #e2e8f0; border-radius: 999px; overflow: hidden;
+      }
+      #foxai-boot .boot-bar::after {
+        content: ""; display: block; width: 40%; height: 100%;
+        background: linear-gradient(90deg, #fb923c, #f97316);
+        border-radius: 999px;
+        animation: foxaiSlide 1.2s ease-in-out infinite;
+      }
+      @keyframes foxaiPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      @keyframes foxaiSlide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(350%); }
+      }
+    </style>
   </head>
-  <body> 
+  <body>
+    <!-- Boot splash: visible until React mounts, then hidden by App.tsx -->
+    <div id="foxai-boot" aria-hidden="true">
+      <svg class="boot-mark" width="72" height="72" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <linearGradient id="bootBg" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#1E293B"/>
+          </linearGradient>
+          <linearGradient id="bootEar" x1="28" y1="6" x2="28" y2="50" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FB923C"/><stop offset="1" stop-color="#F97316"/>
+          </linearGradient>
+          <linearGradient id="bootFace" x1="28" y1="20" x2="28" y2="52" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FBBF24"/><stop offset="1" stop-color="#F97316"/>
+          </linearGradient>
+        </defs>
+        <rect width="56" height="56" rx="14" fill="url(#bootBg)"/>
+        <path d="M16 12 L21 28 L12 24 Z" fill="url(#bootEar)"/>
+        <path d="M40 12 L35 28 L44 24 Z" fill="url(#bootEar)"/>
+        <path d="M28 18 L42 26 L28 48 L14 26 Z" fill="url(#bootFace)"/>
+        <path d="M17 26 L28 19 L21 33 Z" fill="#FED7AA" opacity="0.9"/>
+        <path d="M39 26 L28 19 L35 33 Z" fill="#FED7AA" opacity="0.9"/>
+        <path d="M28 30 L35 36 L28 46 L21 36 Z" fill="#FFFFFF" opacity="0.95"/>
+        <circle cx="21.5" cy="28" r="2.1" fill="#0F172A"/>
+        <circle cx="34.5" cy="28" r="2.1" fill="#0F172A"/>
+        <circle cx="22.1" cy="27.4" r="0.6" fill="#FFFFFF"/>
+        <circle cx="35.1" cy="27.4" r="0.6" fill="#FFFFFF"/>
+        <path d="M28 36 L30.2 38 L28 40 L25.8 38 Z" fill="#0F172A"/>
+      </svg>
+      <div class="boot-name">fox<span>ai</span></div>
+      <div class="boot-tag">Intelligent Tools</div>
+      <div class="boot-bar"></div>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <noscript>Kix Image Tools is a free online image compressor that requires JavaScript. Please enable JavaScript to compress and convert images.</noscript>
+
+    <script>
+      // Hide boot splash as soon as React paints
+      (function () {
+        function hideBoot() {
+          var el = document.getElementById('foxai-boot');
+          if (el) {
+            el.classList.add('hidden');
+            setTimeout(function () { el.parentNode && el.parentNode.removeChild(el); }, 400);
+          }
+        }
+        // Try a few times: after DOMContentLoaded, after window load, and after a short delay
+        document.addEventListener('DOMContentLoaded', function () {
+          setTimeout(hideBoot, 300);
+        });
+        window.addEventListener('load', function () {
+          setTimeout(hideBoot, 600);
+        });
+        // Final fallback
+        setTimeout(hideBoot, 2500);
+      })();
+    </script>
   </body>
 </html>

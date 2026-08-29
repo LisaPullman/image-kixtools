@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+  <defs>
+    <linearGradient id="markBg" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="markEar" x1="28" y1="6" x2="28" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FB923C"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="markFace" x1="28" y1="20" x2="28" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="14" fill="url(#markBg)"/>
+  <path d="M16 12 L21 28 L12 24 Z" fill="url(#markEar)"/>
+  <path d="M40 12 L35 28 L44 24 Z" fill="url(#markEar)"/>
+  <path d="M28 18 L42 26 L28 48 L14 26 Z" fill="url(#markFace)"/>
+  <path d="M17 26 L28 19 L21 33 Z" fill="#FED7AA" opacity="0.9"/>
+  <path d="M39 26 L28 19 L35 33 Z" fill="#FED7AA" opacity="0.9"/>
+  <path d="M28 30 L35 36 L28 46 L21 36 Z" fill="#FFFFFF" opacity="0.95"/>
+  <circle cx="21.5" cy="28" r="2.1" fill="#0F172A"/>
+  <circle cx="34.5" cy="28" r="2.1" fill="#0F172A"/>
+  <circle cx="22.1" cy="27.4" r="0.6" fill="#FFFFFF"/>
+  <circle cx="35.1" cy="27.4" r="0.6" fill="#FFFFFF"/>
+  <path d="M28 36 L30.2 38 L28 40 L25.8 38 Z" fill="#0F172A"/>
+</svg>

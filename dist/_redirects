@@ -1,0 +1,29 @@
+# Cloudflare Pages redirects (https://developers.cloudflare.com/pages/configuration/redirects/)
+# First-match wins.
+
+# ---- Language canonicalisation (force trailing slash) ------------------
+# Visiting /zh-CN (no slash) is canonicalised to /zh-CN/ to match hreflang.
+/zh-CN    /zh-CN/    301
+
+# ---- Marketing / vanity redirects -------------------------------------
+# /image -> root, so older links still land somewhere sensible.
+/image    /          301
+/img      /          301
+
+# ---- Blog shortcuts ----------------------------------------------------
+/guides          /blog/         301
+/zh-CN/guides    /zh-CN/blog/   301
+
+# ---- Single Page App fallback ------------------------------------------
+# Anything not matched above and not pointing to a file → serve /index.html.
+# Cloudflare Pages handles static assets automatically; this only catches
+# paths that don't exist as files (e.g. /foo) and would otherwise 404.
+#/      /index.html   200
+#/*     /index.html   200
+
+# ---- Pretty URL for /favicon.ico if browsers request it ----------------
+# Some legacy browsers ignore <link rel="icon"> and request /favicon.ico.
+/favicon.ico     /icon.svg      301
+
+# ---- Security.txt (RFC 9116) -------------------------------------------
+/.well-known/security.txt    https://kixtools.com/.well-known/security.txt   301

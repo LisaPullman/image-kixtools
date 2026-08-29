@@ -1,0 +1,36 @@
+# Cloudflare Pages configuration
+# https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+
+name = "kix-image-tools"
+pages_build_output_dir = "./dist"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+# Build command is configured in Cloudflare dashboard / project settings.
+# Locally: `npm run build`
+command = "npm run build"
+
+# Environment variables available during build.
+[vars]
+PUBLIC_SITE_ORIGIN = "https://image.kixtools.com"
+
+# ---------------------------------------------------------------
+# Production environment overrides
+# ---------------------------------------------------------------
+[env.production]
+name = "kix-image-tools-production"
+
+[env.production.vars]
+PUBLIC_SITE_ORIGIN = "https://image.kixtools.com"
+NODE_ENV = "production"
+
+# ---------------------------------------------------------------
+# Preview environment (used for PR previews)
+# ---------------------------------------------------------------
+[env.preview]
+name = "kix-image-tools-preview"
+
+[env.preview.vars]
+PUBLIC_SITE_ORIGIN = "https://preview.image.kixtools.com"
+NODE_ENV = "development"

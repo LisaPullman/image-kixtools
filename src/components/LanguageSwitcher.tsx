@@ -19,9 +19,9 @@ export function LanguageSwitcher() {
       onClick={() => switchLanguage(target)}
       aria-label={t.switchToAria}
       title={t.switchToAria}
-      className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-gray-600 bg-white border border-gray-200 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors"
+      className="inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-slate-700 bg-white/80 backdrop-blur border border-slate-200 rounded-lg shadow-sm hover:bg-white hover:text-slate-900 hover:border-slate-300 transition-all"
     >
-      <Globe className="w-4 h-4" />
+      <Globe className="w-4 h-4 text-slate-500" />
       {t.switchTo}
     </button>
   );
