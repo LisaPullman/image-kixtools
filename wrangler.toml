@@ -13,6 +13,9 @@ compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 
 # Environment variables available to Pages Functions at runtime.
+# NOTE: do NOT set NODE_ENV=production here — CF Pages already sets it
+# for production builds, AND having it set during `npm ci` causes npm to
+# skip devDependencies (vite, wrangler, etc.) and the build fails.
 [vars]
 PUBLIC_SITE_ORIGIN = "https://image.kixtools.com"
 
@@ -24,7 +27,6 @@ name = "kix-image-tools-production"
 
 [env.production.vars]
 PUBLIC_SITE_ORIGIN = "https://image.kixtools.com"
-NODE_ENV = "production"
 
 # ---------------------------------------------------------------
 # Preview environment (used for PR previews)
@@ -34,4 +36,3 @@ name = "kix-image-tools-preview"
 
 [env.preview.vars]
 PUBLIC_SITE_ORIGIN = "https://preview.image.kixtools.com"
-NODE_ENV = "development"

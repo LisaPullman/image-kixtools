@@ -114,10 +114,17 @@ npm run cf:tail                   # stream live logs
 
 ### Environment variables
 
-| Name | Value | Purpose |
+Set in **Settings → Environment variables** (NOT in `wrangler.toml`,
+because `NODE_ENV=production` would make `npm ci` skip devDependencies
+and break the Vite build):
+
+| Name | Value | Environment |
 |---|---|---|
-| `NODE_ENV` | `production` | Build mode |
-| `PUBLIC_SITE_ORIGIN` | `https://image.kixtools.com` | Canonical origin |
+| `PUBLIC_SITE_ORIGIN` | `https://image.kixtools.com` | Production |
+| `PUBLIC_SITE_ORIGIN` | `https://preview.image.kixtools.com` | Preview |
+
+> `NODE_ENV` is auto-set by Cloudflare Pages per environment. Do **not**
+> override it manually.
 
 ---
 
